@@ -4,7 +4,7 @@ for i=1:nInput
 nMF=numel(fis.input(i).mf);
 for j=1:nMF
 k=numel(fis.input(i).mf(j).params);
-fis.input(i).mf(j).params=s(p(1:k));
+fis.input(i).mf(j).params=p(1:k);
 p(1:k)=[];
 end
 end
